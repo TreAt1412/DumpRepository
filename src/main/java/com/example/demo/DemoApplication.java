@@ -38,7 +38,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) throws JobInstanceAlreadyCompleteException, JobExecutionAlreadyRunningException, JobParametersInvalidException, JobRestartException {
 		ApplicationContext ctx = SpringApplication.run(DemoApplication.class, args);
-		System.out.println(123);
+		System.out.println(1234);
 //		JobLauncherService jobLauncher = (JobLauncherService) ctx.getBean("jobLauncherService");
 //		jobLauncher.runImportOrderJob();
 	}
