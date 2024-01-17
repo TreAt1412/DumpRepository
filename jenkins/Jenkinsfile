@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
              steps {
                withDockerRegistry(credentialsId: 'docker-hub', url: 'https://index.docker.io/v1/') {
-                   sh 'docker build -t treat1412/spring:v10'
+                   sh 'docker build -t treat1412/spring:v10 .'
                    sh 'docker push treat1412/spring:v10'
                }
              }
